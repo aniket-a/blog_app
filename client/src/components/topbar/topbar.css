@@ -1,0 +1,151 @@
+.top{
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    z-index: 999;
+}
+.topLeft , .topRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    border-bottom: 2px solid grey;
+    width: 70%;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+.topLeft .socialLink{
+    margin-right: 0.5rem;
+    font-size: 30px;
+    color: grey;
+    cursor: pointer;
+}
+
+.topRight .topimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.topCenter{
+    flex: 6;
+}
+
+.toplist{
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.topCenter .toplist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.toplist li{
+    list-style: none;
+    font-weight: 540;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.topSearchIcon{
+    margin-left: 1.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.menuBar{
+    display: none;
+}
+
+.beforeLogin{
+    margin: 0 1rem;
+}
+
+.tab{
+    margin: 0 1rem;
+}
+
+
+@media (max-width:900px) {
+    .topLeft{
+        justify-content: start;
+        margin-left: 1rem;
+    }
+        .toplist {
+            display: none;
+        }   
+    .top{
+        height: 80px;
+    }
+    .menuBar{
+        display: block;
+        z-index: 999;
+        font-size: 2rem;
+        margin-right: 1.5rem;
+        color: black;
+    }
+    .close{
+        margin-top: 0.5rem;
+    }
+    .active .topCenter{
+        display: block;
+        animation: slide 0.5s ease forwards;
+    }
+    .active .toplist{
+        display: none;
+    }
+    .topCenter{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: grey;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        transition: transform 0.5s ease;
+    }
+    .toplist{
+        flex-direction: column;
+        flex: 1;
+    }
+    .toplist li{
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+
+    .topRight{
+        display: none;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

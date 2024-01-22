@@ -1,0 +1,104 @@
+.setting{
+    display: flex;
+    padding: 2rem 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.settingWrapper{
+    flex: 9;
+    margin-top: 1rem;
+}
+
+.settingTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settingUpdateTitle{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: lightcoral;
+
+}
+
+.settingDeleteTitle{
+    color: crimson;
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+    border: 1px solid crimson;
+    padding: 0.5rem 0.2rem;
+    border-radius: 8px;
+}
+
+.settingDeleteTitle:active{
+    background-color: rgb(226, 220, 220);
+}
+
+.settingForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.settingPP{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+}
+.settingPP >img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.settingPPIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.settingForm > label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.settingForm > input{
+    color: grey;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid lightslategrey;
+    width: 90%;
+}
+
+.settingSubmitBtn{
+    width: 200px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: teal;
+    padding: 0.5rem 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.settingSubmitBtn:active{
+    background-color: azure;
+    color: black;
+    border: 1px solid black;
+}
