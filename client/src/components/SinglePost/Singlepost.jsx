@@ -20,7 +20,7 @@ const Singlepost = () => {
   const path = location.pathname.split("/")[2]
 
   const [post, setpost] = useState([])
-  const pf = "http://localhost:4500/images/";
+  const pf = "https://blog-api-mocha-two.vercel.app/images/";
 
   useEffect(() => {
     const getPost = async () => {

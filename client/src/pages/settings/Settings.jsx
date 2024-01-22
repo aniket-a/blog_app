@@ -16,7 +16,7 @@ const Settings = () => {
 
   
 
-  const PF = "http://localhost:4500/images/";
+  const PF = "https://blog-api-mocha-two.vercel.app/images/";
 
   const profiles = user?.user?.profilePic;
   const userNames = user?.user?.userName;
